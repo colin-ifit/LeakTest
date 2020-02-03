@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/colin.vg/Projects/LeakTest/LeakTest/LeakTest.csproj": {}
+  },
+  "projects": {
+    "/Users/colin.vg/Projects/LeakTest/LeakTest/LeakTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/colin.vg/Projects/LeakTest/LeakTest/LeakTest.csproj",
+        "projectName": "LeakTest",
+        "projectPath": "/Users/colin.vg/Projects/LeakTest/LeakTest/LeakTest.csproj",
+        "packagesPath": "/Users/colin.vg/.nuget/packages/",
+        "outputPath": "/Users/colin.vg/Projects/LeakTest/LeakTest/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/colin.vg/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/orbital-drop-bear/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Square.OkIO": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "Xamarin.Android.Support.Core.Utils": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.CustomTabs": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.Design": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.Kotlin.StdLib": {
+              "target": "Package",
+              "version": "[1.3.50.1, )"
+            },
+            "iFit.LeakCanary": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}

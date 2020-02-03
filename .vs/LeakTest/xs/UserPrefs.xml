@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{73351612-394F-4897-9168-9648613EA0A8}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="LeakTest/MainActivity.cs" Line="18" Column="47" />
+      <File FileName="LeakTest/SecondActivity.cs" Line="18" Column="43" />
+      <File FileName="LeakTest/ThirdActivity.cs" Line="19" Column="39" />
+      <File FileName="LeakTest/Resources/layout/activity_main.xml" Line="21" Column="16" />
+      <File FileName="LeakTest/Resources/layout/second_activity.axml" Line="8" Column="39" />
+      <File FileName="LeakTest/Resources/layout/content_main.xml" Line="1" Column="1" />
+      <File FileName="../../.nuget/packages/ifit.leakcanary/2.1.1/readme.txt" Line="1" Column="1" />
+      <File FileName="LeakTest/MainApplication.cs" Line="8" Column="18" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LeakTest" expanded="True">
+            <Node name="LeakTest" expanded="True">
+              <Node name="Resources" expanded="True" />
+              <Node name="SecondActivity.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.LeakTest AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.8AFY0JXEC" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
