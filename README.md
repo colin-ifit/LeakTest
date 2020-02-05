@@ -1,6 +1,6 @@
 ﻿# LeakCanary Test
 
-This project was created to test and demonstrate how well LeakCanary works with Xamarin. There is a branch using LeakCanary 1.5.1.1 and a branch using LeakCanary 2.1.1.
+This project was created to test and demonstrate how well LeakCanary works with Xamarin. There is a branch using [LeakCanary 1.5.1.1](https://github.com/colin-ifit/LeakTest/tree/leakcanary1.5) and a branch using [LeakCanary 2.1.1](https://github.com/colin-ifit/LeakTest/tree/leakcanary2.1).
 
 This project demonstrates leaks within Activities and Fragments.
 
