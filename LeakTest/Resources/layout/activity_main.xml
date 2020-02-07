@@ -17,5 +17,12 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:id="@+id/ThirdActivityButton" />
+
+     <Button
+		android:text="Open Fragments"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/FragmentsButton" />
+
 	
 </LinearLayout>

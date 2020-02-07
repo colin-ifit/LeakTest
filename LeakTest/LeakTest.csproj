@@ -64,6 +64,11 @@
     <Compile Include="SecondActivity.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="ThirdActivity.cs" />
+    <Compile Include="Fragments\QuoteFragment.cs" />
+    <Compile Include="Fragments\PeopleFragment.cs" />
+    <Compile Include="FragmentActivity.cs" />
+    <Compile Include="QuoteActivity.cs" />
+    <Compile Include="Quotes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -101,6 +106,10 @@
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\quote_activity.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
@@ -118,6 +127,9 @@
     </PackageReference>
     <PackageReference Include="Square.OkIO">
       <Version>2.4.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Fragment">
+      <Version>28.0.0.3</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
