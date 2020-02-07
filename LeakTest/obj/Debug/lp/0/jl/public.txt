@@ -1,6 +1,0 @@
-bool leak_canary_add_dynamic_shortcut
-bool leak_canary_add_launcher_icon
-string leak_canary_display_activity_label
-layout leak_canary_heap_dump_toast
-mipmap leak_canary_icon
-string leak_canary_test_class_name
