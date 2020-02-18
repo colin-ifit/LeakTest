@@ -1,10 +1,9 @@
 ﻿using System;
-using Android.App;
 using Android.OS;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
-//using Android.Support.V4.App;
+using Android.Support.V4.App;
 
 namespace LeakTest.Fragments
 {

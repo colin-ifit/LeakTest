@@ -1,16 +1,16 @@
 ﻿using Android.App;
 using Android.OS;
-//using Android.Support.V4.App;
-using Android.Support.V7.App;
 using LeakTest.Fragments;
+using Android.Support.V4.App;
+using Android.Support.V7.App;
 
 namespace LeakTest
 {
     [Activity(Label = "QuoteActivity")]
-    public class QuoteActivity : Activity
+    public class QuoteActivity : AppCompatActivity
     {
         QuoteFragment quoteFragment;
-        FragmentTransaction ft;
+        Android.Support.V4.App.FragmentTransaction ft;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -19,7 +19,7 @@ namespace LeakTest
 
             quoteFragment = QuoteFragment.NewInstance(quoteId);
 
-            ft = FragmentManager.BeginTransaction();
+            ft = SupportFragmentManager.BeginTransaction();
 
                 ft.DisallowAddToBackStack()
                             .Add(Android.Resource.Id.Content, quoteFragment)
@@ -34,10 +34,10 @@ namespace LeakTest
 
             quoteFragment.Dispose();
             //var count = FragmentManager.Fragments.Count;
-            FragmentManager.Fragments.Clear();
+            SupportFragmentManager.Fragments.Clear();
 
             //count = FragmentManager.Fragments.Count;
-            FragmentManager.Dispose();
+            SupportFragmentManager.Dispose();
 
             ft.Dispose();
             Dispose();
