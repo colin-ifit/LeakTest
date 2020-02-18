@@ -1,6 +1,6 @@
 ﻿using Android.App;
 using Android.OS;
-using Android.Support.V4.App;
+using AndroidX.Fragment.App;
 
 namespace LeakTest.Resources
 {
