@@ -1,11 +1,10 @@
 ﻿using Android.App;
 using Android.OS;
-using Android.Support.V4.App;
 
 namespace LeakTest.Resources
 {
     [Activity(Label = "FragActivity")]
-    public class FragActivity : FragmentActivity
+    public class FragActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {

@@ -1,10 +1,9 @@
 ﻿using System;
 using Android.Content;
 using Android.OS;
-//using Android.App;
+using Android.App;
 using Android.Views;
 using Android.Widget;
-using Android.Support.V4.App;
 namespace LeakTest.Fragments
 {
     public class PeopleFragment : ListFragment
