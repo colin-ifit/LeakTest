@@ -1,6 +1,8 @@
 ﻿using Android.App;
 using Android.OS;
+using Android.Widget;
 using LeakTest.Fragments;
+using System;
 
 namespace LeakTest
 {
@@ -8,6 +10,7 @@ namespace LeakTest
     public class QuoteActivity : Activity
     {
         QuoteFragment quoteFragment;
+        FragmentManager fm;
         FragmentTransaction ft;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -17,11 +20,12 @@ namespace LeakTest
 
             quoteFragment = QuoteFragment.NewInstance(quoteId);
 
-            ft = FragmentManager.BeginTransaction();
+            fm = FragmentManager;
 
-                ft.DisallowAddToBackStack()
-                            .Add(Android.Resource.Id.Content, quoteFragment)
-                            .Commit();
+            ft = fm.BeginTransaction();
+
+                        ft.Add(Android.Resource.Id.Content, quoteFragment)
+                        .Commit();
 
             //FragmentManager.PopBackStackImmediate();
         }
@@ -30,15 +34,21 @@ namespace LeakTest
         {
             base.OnDestroy();
 
-            quoteFragment.Dispose();
-            //var count = FragmentManager.Fragments.Count;
-            FragmentManager.Fragments.Clear();
+            var frameLayout = FindViewById<FrameLayout>(Android.Resource.Id.Content);
+            //frameLayout.ClearAnimation();
+            //frameLayout.RemoveAllViews();
+            frameLayout?.Dispose();
+            //frameLayout = null;
 
-            //count = FragmentManager.Fragments.Count;
-            FragmentManager.Dispose();
-
+            //FragmentManager.BeginTransaction().Remove(quoteFragment).CommitAllowingStateLoss();
+            //FragmentManager.Fragments.Clear();
+            //FragmentManager.Dispose();
+            //quoteFragment.Dispose();
             ft.Dispose();
+            fm.Dispose();
             Dispose();
+            GC.Collect(0);
+            //Java.Lang.JavaSystem.Gc();
         }
     }
 }
